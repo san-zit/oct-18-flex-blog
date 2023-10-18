@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- downloaded from cdn and font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- global msg section -->
+      <div class="global-msg">
+        <div class="container">
+          <div class="msg">welcome</div>
+          <div class="social">
+            <!-- icons -->
+            <!-- facebook icon -->
+            <i class="fa-brands fa-facebook"></i>
+            <!-- linkedin -->
+            <i class="fa-brands fa-linkedin"></i>
+            <!-- instagram -->
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- top nav bar -->
+      <div class="nav-bar">
+        <div class="container">
+          <div class="logo">MyTravel</div>
+          <div class="menu">
+            <ul>
+              <li>Blog</li>
+              <li>Gallery</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- hero section -->
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Welcome to traavel blog</h1>
+          <hr />
+          <p>your one step gateway solution</p>
+        </div>
+      </div>
+
+      <div class="main container">
+        <div class="main-content">
+          <h2>Latest post</h2>
+          <hr />
+
+          <article>
+            <div class="art-img">
+              <img src="./img/img2.jpeg" alt="" width="100%" />
+            </div>
+            <div class="art-content">
+              <div class="title">How to travel around the word</div>
+
+              <div>
+                <i class="fa-regular fa-calendar-days"></i>
+                2020-20-11
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                fuga voluptas, sunt, hic explicabo, ipsa maxime corporis earum
+                rerum impedit sapiente minus unde doloremque nisi. Recusandae
+                quidem optio consectetur illo.
+              </p>
+              <div class="button-box">
+                <button class="btn">Read more...</button>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="art-img">
+              <img src="./img/img2.jpeg" alt="" width="100%" />
+            </div>
+            <div class="art-content">
+              <div class="title">How to travel around the word</div>
+
+              <div>
+                <i class="fa-regular fa-calendar-days"></i>
+                2020-20-11
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                fuga voluptas, sunt, hic explicabo, ipsa maxime corporis earum
+                rerum impedit sapiente minus unde doloremque nisi. Recusandae
+                quidem optio consectetur illo.
+              </p>
+              <div class="button-box">
+                <button class="btn">Read more...</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="side-links">
+          <div class="read-by-country">
+            <h3>Read by country</h3>
+            <ul>
+              <li>Nepal</li>
+              <li>Australia</li>
+              <li>India</li>
+              <li>Japan</li>
+            </ul>
+          </div>
+          <div class="read-by-date">
+            <h3>Read by date</h3>
+            <ul>
+              <li>2019</li>
+              <li>2020</li>
+              <li>2021</li>
+              <li>2022</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- recommendation section -->
+
+      <div class="recommendation">
+        <div class="container">
+          <h2>Recommendation destinatios</h2>
+          <hr />
+          <!-- <img src="./img/img2.jpeg" alt="" /> -->
+
+          <div class="card-list">
+            <div class="card">
+              <img src="./img/img2.jpeg" alt="" width="100%" />
+
+              <h3>Nepal, the paradise</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                eligendi possimus voluptas nulla maiores perferendis iusto natus
+                labore quos, nam minus commodi aperiam sint. Eum nihil atque sed
+                harum ullam.
+              </p>
+              <button class="btn-recommendation">Read more</button>
+            </div>
+            <div class="card">
+              <img src="./img/img2.jpeg" alt="" width="100%" />
+              <h3>Nepal, the paradise</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                eligendi possimus voluptas nulla maiores perferendis iusto natus
+                labore quos, nam minus commodi aperiam sint. Eum nihil atque sed
+                harum ullam.
+              </p>
+              <button class="btn-recommendation">Read more</button>
+            </div>
+            <div class="card">
+              <img src="./img/img2.jpeg" alt="" width="100%" />
+              <h3>Nepal, the paradise</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                eligendi possimus voluptas nulla maiores perferendis iusto natus
+                labore quos, nam minus commodi aperiam sint. Eum nihil atque sed
+                harum ullam.
+              </p>
+              <button class="btn-recommendation">Read more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subs">
+        <h3>Subscribe to receive the latest articles</h3>
+        <form action="">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+          <input type="Submit"  class="btn-subs" name="" id="" value="Subscribe" />
+        </form>
+      </div>
+
+      <div class="footer">
+        <p>© Copy right all reserved | Made by ❤️</p>
+      </div>
+    </div>
+  </body>
+</html>

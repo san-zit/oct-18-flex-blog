@@ -1,0 +1,54 @@
+/* min-width -> if you are doing mobile first design*/
+/* max-width -> if you are doing desktop first design */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+h1 {
+  color: green;
+}
+h1::after {
+  content: ".............";
+}
+
+/* Media Query */
+/* media type - print, screen, all */
+
+/* iphone breakpoint 390px */
+@media screen and (max-width: 1000px) {
+  h1 {
+    color: rgb(10, 40, 175);
+  }
+  h1::after {
+    content: "-->desktop";
+  }
+
+  /* ipad break-point 800px*/
+  @media screen and (max-width: 800px) {
+    h1 {
+      color: brown;
+    }
+    h1::after {
+      content: "-->ipad";
+    }
+  }
+  /* iphone breakpoint 390px */
+  @media screen and (max-width: 390px) {
+    h1 {
+      color: black;
+    }
+    h1::after {
+      content: "-->iphone";
+    }
+  }
+}

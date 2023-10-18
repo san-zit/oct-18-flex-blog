@@ -1,0 +1,262 @@
+/* reset css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.global-msg > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5px;
+}
+.global-msg {
+  background-color: cadetblue;
+}
+
+/* top nav */
+
+.nav-bar > div {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar {
+  background-color: blanchedalmond;
+  padding: 1rem 0;
+}
+ul {
+  list-style-type: none;
+}
+.menu > ul {
+  display: flex;
+  gap: 10px;
+}
+.menu > ul > li {
+  cursor: pointer;
+}
+.menu > ul > li:hover {
+  color: purple;
+  text-decoration: underline;
+  transform: translateY(-2px);
+}
+
+/* hero section */
+.hero {
+  /* background-image: url(./img/img1.jpeg); */
+  background: url(./img/img1.jpeg) no-repeat center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-color: burlywood; */
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  background-color: rgba(60, 67, 54, 0.425);
+  text-align: center;
+  color: aliceblue;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+/* main content*/
+.main {
+  display: flex;
+  margin-top: 20px;
+}
+.main-content {
+  width: 65%;
+  /* background-color: brown; */
+}
+.side-links {
+  /* background-color: rgb(42, 54, 165); */
+  width: 35%;
+}
+
+.art-img {
+  width: 400px;
+  transition: all 1.5s ease-in;
+
+  /* background-color: blueviolet; */
+}
+
+article {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.art-content div {
+  margin-bottom: 10px;
+}
+.btn,
+.btn-recommendation,
+.btn-subs {
+  background-color: aqua;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(110, 7, 7);
+}
+.button-box {
+  display: flex;
+  justify-content: right;
+}
+
+/* side links */
+
+/* we can apply same css to more then one component for example
+.read-by-country, read-by-date {  } */
+.read-by-country {
+  margin-top: 2rem;
+  background-color: hsl(220, 78%, 78%);
+  padding: 1rem;
+  border: 5px;
+}
+.read-by-date {
+  margin-top: 2rem;
+  background-color: hsl(204, 76%, 65%);
+  padding: 1rem;
+  border: 5px;
+}
+.side-links {
+  margin-left: 20px;
+}
+.read-by-date li::before {
+  content: "📍";
+}
+.read-by-country li::before {
+  content: "⛳️";
+}
+
+/* Recommendation */
+
+.recommendation {
+  background-color: bisque;
+  padding: 3rm 0;
+}
+.card {
+  width: 250px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 6px -3px 5px 1px rgba(100, 44, 44, 0.63);
+  margin-bottom: 20px;
+  flex-basis: 250px;
+  flex-grow: 1;
+  /* flex: 1; */
+
+  /* fle-grow */
+  /* flex-shrink */
+}
+/* .btn-recommendation {
+  background-color: aqua;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(110, 7, 7);
+} */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+  margin-top: 20px;
+}
+/* Subscribe */
+.subs {
+  background-color: rgba(0, 0, 0, 0.142);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.subs input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px solid coral;
+
+  /* cursor: pointer; */
+}
+.subs input:focus {
+  outline: none;
+  border: 1px solid orangered;
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+/* media query */
+/* ipad */
+@media (max-width: 800px) {
+  .nav-bar {
+    background-color: orange;
+    color: white;
+  }
+  .main-content {
+    width: 60%;
+  }
+  .side-links {
+    width: 30%;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .art-img {
+    width: 250px;
+  }
+}
+/* mid breakpoint */
+@media (max-width: 480px) {
+  .main-content,
+  .side-links {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+  }
+
+  .art-img {
+    width: 320px;
+  }
+
+  .side-links {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 20px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .side-links > div {
+    flex: 1;
+  }
+}
+@media (max-width: 576px) {
+  .subs form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
